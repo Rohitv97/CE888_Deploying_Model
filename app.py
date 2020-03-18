@@ -35,7 +35,6 @@ def my_form():
 
 @app.route('/', methods=['POST', 'GET'])
 def my_form_post():
-    age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal, req_model
     age = request.form['age']
     sex = request.form['sex']
     cp = request.form['cp']
