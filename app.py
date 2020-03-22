@@ -5,8 +5,8 @@ import pickle
 print(os.getcwd())
 path = os.getcwd()
 
-# with open('Models/dtree_model.pkl', 'rb') as f:
-    # dtree = pickle.load(f)
+with open('Models/dtree_model.pkl', 'rb') as f:
+    dtree = pickle.load(f)
 
 with open('Models/svm_model.pkl', 'rb') as f:
     svm_model = pickle.load(f)
@@ -19,10 +19,10 @@ def get_predictions(age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, 
     mylist = [float(i) for i in mylist]
     vals = [mylist]
 
-    # if req_model == 'DecisionTree':
-        # return dtree.predict(vals)[0]
+    if req_model == 'DecisionTree':
+        return dtree.predict(vals)[0]
 
-    if req_model == 'SVM':
+    elif req_model == 'SVM':
         #print(req_model)
         return svm_model.predict(vals)[0]
     else:
