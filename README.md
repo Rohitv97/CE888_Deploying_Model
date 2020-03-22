@@ -1,2 +1,1 @@
-# CE888_Deploying_Model
-Lab 10 for CE888. 
+# CE888_Lab_ML_Deployment
