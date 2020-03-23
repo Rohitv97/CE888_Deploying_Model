@@ -1,1 +1,4 @@
-# CE888_Lab_ML_Deployment
+# CE888_Deploying_Model
+
+* Model trained on Heart Disease Classification Data from UCL
+* Deployed on Heroku
